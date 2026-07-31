@@ -13,33 +13,30 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Setup Java JDK 17
+      - name: Setup Java JDK 21
         uses: actions/setup-java@v4
         with:
           distribution: 'zulu'
-          java-version: '17'
+          java-version: '21'
+
+      - name: Setup Android SDK
+        uses: android-actions/setup-android@v3
 
       - name: Setup Node.js 22
         uses: actions/setup-node@v4
         with:
           node-version: 22
-          cache: 'npm'
 
       - name: Install dependencies
-        run: npm ci
+        run: npm install
 
       - name: Build Web App
         run: npm run build
 
-      - name: Install Capacitor & Generate Android Project
+      - name: Sync & Build Android APK
         run: |
-          npm install @capacitor/core @capacitor/cli @capacitor/android
-          npx cap init "Assentrim Asset Verification" "com.assentrim.verification" --web-dir dist
-          npx cap add android
+          npx cap add android || true
           npx cap sync android
-
-      - name: Build Android APK with Gradle
-        run: |
           cd android
           chmod +x gradlew
           ./gradlew assembleDebug
