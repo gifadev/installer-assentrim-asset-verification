@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <resources>
-    <string name="app_name">Assentrim Asset Verification</string>
-    <string name="title_activity_main">Assentrim Asset Verification</string>
-    <string name="package_name">com.assentrim.verification</string>
-    <string name="custom_url_scheme">com.assentrim.verification</string>
+    <string name="app_name">Asentrim Asset Verification</string>
+    <string name="title_activity_main">Asentrim Asset Verification</string>
+    <string name="package_name">com.asentrim.verification</string>
+    <string name="custom_url_scheme">com.asentrim.verification</string>
 </resources>

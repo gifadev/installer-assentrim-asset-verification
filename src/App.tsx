@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import VerifyLicenseModal from './components/VerifyLicenseModal';
 import './App.css';
-import assentrimLogo from './assets/assentrim-logo.svg';
+import asentrimLogo from './assets/asentrim-logo.svg';
 
 function App() {
   const [username, setUsername] = useState('');
@@ -57,10 +57,10 @@ function App() {
           <div className="reticle-corner top-right"></div>
           <div className="reticle-corner bottom-left"></div>
           <div className="reticle-corner bottom-right"></div>
-          <img src={assentrimLogo} alt="Assentrim Logo" className="brand-svg-logo" />
+          <img src={asentrimLogo} alt="Asentrim Logo" className="brand-svg-logo" />
         </div>
 
-        <h1 className="brand-asentrim-title">ASSENTRIM</h1>
+        <h1 className="brand-asentrim-title">ASENTRIM</h1>
 
         <div className="subtitle-wrapper">
           <div className="sub-line"></div>

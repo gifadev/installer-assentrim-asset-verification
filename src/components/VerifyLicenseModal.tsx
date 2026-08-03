@@ -40,7 +40,7 @@ const VerifyLicenseModal: React.FC<VerifyLicenseModalProps> = ({ isOpen, onClose
     await new Promise(resolve => setTimeout(resolve, 650));
 
     if (licenseKey.trim() === '123') {
-      console.log("Assentrim Asset Verification: License Activated");
+      console.log("Asentrim Asset Verification: License Activated");
       onSuccess();
       onClose();
     } else {
