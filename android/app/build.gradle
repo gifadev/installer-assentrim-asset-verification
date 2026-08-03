@@ -1,10 +1,10 @@
 apply plugin: 'com.android.application'
 
 android {
-    namespace "com.asentrim.verification"
+    namespace "com.asentrim.core"
     compileSdk rootProject.ext.compileSdkVersion
     defaultConfig {
-        applicationId "com.asentrim.verification"
+        applicationId "com.asentrim.core"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1

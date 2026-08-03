@@ -22,7 +22,7 @@ function App() {
   };
 
   const handleLicenseSuccess = () => {
-    setNotification("NODE AUTHORIZED. Access Granted to Asset Verification System.");
+    setNotification("NODE AUTHORIZED. Access Granted to Core System.");
     setTimeout(() => setNotification(null), 5000);
   };
 

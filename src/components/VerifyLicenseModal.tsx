@@ -40,7 +40,7 @@ const VerifyLicenseModal: React.FC<VerifyLicenseModalProps> = ({ isOpen, onClose
     await new Promise(resolve => setTimeout(resolve, 650));
 
     if (licenseKey.trim() === '123') {
-      console.log("Asentrim Asset Verification: License Activated");
+      console.log("Asentrim Core: License Activated");
       onSuccess();
       onClose();
     } else {
@@ -69,7 +69,7 @@ const VerifyLicenseModal: React.FC<VerifyLicenseModalProps> = ({ isOpen, onClose
         <h2 className="verify-modal-title">ACTIVE LICENSE NOT FOUND</h2>
         
         <p className="verify-modal-desc">
-          This asset verification node is not authorized under an active license. Please enter a valid activation key.
+          This asset core node is not authorized under an active license. Please enter a valid activation key.
         </p>
 
         <form onSubmit={handleSubmit} className="verify-modal-form">

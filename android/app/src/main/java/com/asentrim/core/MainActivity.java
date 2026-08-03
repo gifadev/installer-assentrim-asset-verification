@@ -1,4 +1,4 @@
-package com.asentrim.verification;
+package com.asentrim.core;
 
 import com.getcapacitor.BridgeActivity;
 

@@ -1,5 +1,5 @@
 {
-  "appId": "com.asentrim.verification",
-  "appName": "Asentrim Asset Verification",
+  "appId": "com.asentrim.core",
+  "appName": "Asentrim Core",
   "webDir": "dist"
 }
